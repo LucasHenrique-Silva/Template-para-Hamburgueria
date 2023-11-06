@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Enter your description here" />
+    <link
+      rel="stylesheet"
+      href="css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Cardapio</title>
+  </head>
+  <body>
+   <nav class="navbar navbar-expand-lg navbar-light bgred bg-danger">
+      <a class="navbar-brand" href="index.html">
+        <img
+          src="images/logo.png"
+          alt="Logo"
+          width="30px"
+          height="29px"
+          class="pd-3"
+        />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="index.html"> HOME </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="cardapio.html"> CARDAPIO </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="sobre.html"> SOBRE </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="pedidos.html"> PEDIDOS </a>
+            <li class="nav-item">
+            <a class="nav-link text-white" href="carrinho.html"> CARRINHO </a>
+          </li>
+           <li class="nav-item">
+            <a id="loginLink" class="nav-link text-white" href="login.html"
+              >LOGIN</a
+            >
+            <a
+              id="logoutLink"
+              class="nav-link text-white"
+              href="javascript:logoutUser();"
+              style="display: none"
+              >SAIR</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+    <!--Conteudo-->
+<div class="container bgwhite content-area">
+  <div class="row  justify-content-center">
+    <h2 class="title mt-3">Conheça nossos Hamburguers</h2>
+  </div>
+
+  <div class="row mt-5 justify-content-center">
+
+    <div class="col-lg-3 mr-auto ml-auto col-12 mb-3 bg-danger">
+      <ul class="list-group mt-3">
+        <li class="cardapio" style="display: flex; align-items: center">
+          <img
+            src="images/Cardapio.png"
+            alt="Hambúrguer"
+            style="margin-right: 10px"
+            height="130px"
+          />
+          <div>
+            <p class="cardapio-title">Hamburguer 1</p>
+            <p class="cardapio-descricao">
+              Pão com gergelim, hambúrguer 200g, salada e molho da casa
+            </p>
+          </div>
+        </li>
+        <div class="d-flex align-items-center">
+          <ul class="list-unstyled">
+            <li class="preco ">
+              <p class="d-inline">Preço R$:14.50</p>
+            </li>
+          </ul>
+          <div class="mr-auto"></div>
+            <button class="btn btn-warning ml-3">Comprar</button>
+          </div>
+      </div>
+
+      <div class="col-lg-3 mr-auto ml-auto col-12 mb-3 bg-danger">
+      <ul class="list-group mt-3">
+        <li class="cardapio" style="display: flex; align-items: center">
+          <img
+            src="images/Cardapio.png"
+            alt="Hambúrguer"
+            style="margin-right: 10px"
+            height="130px"
+          />
+          <div>
+            <p class="cardapio-title">Hamburguer 2</p>
+            <p class="cardapio-descricao">
+              Pão com gergelim, hambúrguer 200g, salada e molho da casa
+            </p>
+          </div>
+        </li>
+        <div class="d-flex align-items-center">
+          <ul class="list-unstyled">
+            <li class="preco ">
+              <p class="d-inline">Preço R$:14.50</p>
+            </li>
+          </ul>
+          <div class="mr-auto"></div>
+          <button class="btn btn-warning ml-3">Comprar</button>
+        </div>
+      </div>
+      
+      <div class="col-lg-3 col-12 mb-3 bg-danger mr-auto ml-auto">
+      <ul class="list-group mt-3">
+        <li class="cardapio" style="display: flex; align-items: center">
+          <img
+            src="images/Cardapio.png"
+            alt="Hambúrguer"
+            style="margin-right: 10px"
+            height="130px"
+          />
+          <div>
+            <p class="cardapio-title">Hamburguer 3</p>
+            <p class="cardapio-descricao">
+              Pão com gergelim, hambúrguer 200g, salada e molho da casa
+            </p>
+          </div>
+        </li>
+        <div class="d-flex align-items-center">
+          <ul class="list-unstyled">
+            <li class="preco ">
+              <p class="d-inline">Preço R$:14.50</p>
+            </li>
+          </ul>
+          <div class="mr-auto"></div>
+          <button class="btn btn-warning ml-3">Comprar</button>
+        </div>
+      </div>
+      
+
+    </div>
+
+     <div class="row mt-5 justify-content-center">
+
+    <div class="col-lg-3 mr-auto ml-auto col-12 mb-3 bg-danger">
+      <ul class="list-group mt-3">
+        <li class="cardapio" style="display: flex; align-items: center">
+          <img
+            src="images/Cardapio.png"
+            alt="Hambúrguer"
+            style="margin-right: 10px"
+            height="130px"
+          />
+          <div>
+            <p class="cardapio-title">Hamburguer 4</p>
+            <p class="cardapio-descricao">
+              Pão com gergelim, hambúrguer 200g, salada e molho da casa
+            </p>
+          </div>
+        </li>
+        <div class="d-flex align-items-center">
+          <ul class="list-unstyled">
+            <li class="preco ">
+              <p class="d-inline">Preço R$:14.50</p>
+            </li>
+          </ul>
+          <div class="mr-auto"></div>
+            <button class="btn btn-warning ml-3">Comprar</button>
+          </div>
+      </div>
+
+      <div class="col-lg-3 mr-auto ml-auto col-12 mb-3 bg-danger">
+      <ul class="list-group mt-3">
+        <li class="cardapio" style="display: flex; align-items: center">
+          <img
+            src="images/Cardapio.png"
+            alt="Hambúrguer"
+            style="margin-right: 10px"
+            height="130px"
+          />
+          <div>
+            <p class="cardapio-title">Hamburguer 5</p>
+            <p class="cardapio-descricao">
+              Pão com gergelim, hambúrguer 200g, salada e molho da casa
+            </p>
+          </div>
+        </li>
+        <div class="d-flex align-items-center">
+          <ul class="list-unstyled">
+            <li class="preco ">
+              <p class="d-inline">Preço R$:14.50</p>
+            </li>
+          </ul>
+          <div class="mr-auto"></div>
+          <button class="btn btn-warning ml-3">Comprar</button>
+        </div>
+      </div>
+      
+      <div class="col-lg-3 col-12 mb-3 bg-danger mr-auto ml-auto">
+      <ul class="list-group mt-3">
+        <li class="cardapio" style="display: flex; align-items: center">
+          <img
+            src="images/Cardapio.png"
+            alt="Hambúrguer"
+            style="margin-right: 10px"
+            height="130px"
+          />
+          <div>
+            <p class="cardapio-title">Hamburguer 6</p>
+            <p class="cardapio-descricao">
+              Pão com gergelim, hambúrguer 200g, salada e molho da casa
+            </p>
+          </div>
+        </li>
+        <div class="d-flex align-items-center">
+          <ul class="list-unstyled">
+            <li class="preco ">
+              <p class="d-inline">Preço R$:14.50</p>
+            </li>
+          </ul>
+          <div class="mr-auto"></div>
+          <button class="btn btn-warning ml-3">Comprar</button>
+        </div>
+      </div>
+
+    </div>
+
+     <div class="row mt-5 justify-content-center">
+
+    <div class="col-lg-3 mr-auto ml-auto col-12 mb-3 bg-danger">
+      <ul class="list-group mt-3">
+        <li class="cardapio" style="display: flex; align-items: center">
+          <img
+            src="images/Cardapio.png"
+            alt="Hambúrguer"
+            style="margin-right: 10px"
+            height="130px"
+          />
+          <div>
+            <p class="cardapio-title">Hamburguer 7</p>
+            <p class="cardapio-descricao">
+              Pão com gergelim, hambúrguer 200g, salada e molho da casa
+            </p>
+          </div>
+        </li>
+        <div class="d-flex align-items-center">
+          <ul class="list-unstyled">
+            <li class="preco ">
+              <p class="d-inline">Preço R$:14.50</p>
+            </li>
+          </ul>
+          <div class="mr-auto"></div>
+            <button class="btn btn-warning ml-3">Comprar</button>
+          </div>
+      </div>
+
+      <div class="col-lg-3 mr-auto ml-auto col-12 mb-3 bg-danger">
+      <ul class="list-group mt-3">
+        <li class="cardapio" style="display: flex; align-items: center">
+          <img
+            src="images/Cardapio.png"
+            alt="Hambúrguer"
+            style="margin-right: 10px"
+            height="130px"
+          />
+          <div>
+            <p class="cardapio-title">Hamburguer 8</p>
+            <p class="cardapio-descricao">
+              Pão com gergelim, hambúrguer 200g, salada e molho da casa
+            </p>
+          </div>
+        </li>
+        <div class="d-flex align-items-center">
+          <ul class="list-unstyled">
+            <li class="preco ">
+              <p class="d-inline">Preço R$:14.50</p>
+            </li>
+          </ul>
+          <div class="mr-auto"></div>
+          <button class="btn btn-warning ml-3">Comprar</button>
+        </div>
+      </div>
+      
+      <div class="col-lg-3 col-12 mb-3 bg-danger mr-auto ml-auto">
+      <ul class="list-group mt-3">
+        <li class="cardapio" style="display: flex; align-items: center">
+          <img
+            src="images/Cardapio.png"
+            alt="Hambúrguer"
+            style="margin-right: 10px"
+            height="130px"
+          />
+          <div>
+            <p class="cardapio-title">Hamburguer 9</p>
+            <p class="cardapio-descricao">
+              Pão com gergelim, hambúrguer 200g, salada e molho da casa
+            </p>
+          </div>
+        </li>
+        <div class="d-flex align-items-center">
+          <ul class="list-unstyled">
+            <li class="preco ">
+              <p class="d-inline">Preço R$:14.50</p>
+            </li>
+          </ul>
+          <div class="mr-auto"></div>
+          <button class="btn btn-warning ml-3">Comprar</button>
+        </div>
+      </div>
+      
+
+    </div>
+</div>
+
+    <!-- Adicione mais colunas conforme necessário -->
+  </div>
+</div>
+
+
+    <!--Footer-->
+    <footer class="text-white py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 d-none d-lg-block">
+            <!-- Classe d-lg-none para ocultar em telas menores que lg -->
+            <img src="images/logo.png" alt="Logo" />
+          </div>
+
+          <div class="col-lg-2 mx-3">
+            <div class="footer-tittle">Informações</div>
+            <ul class="list-unstyled">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="sobre.html">Sobre</a></li>
+              <li><a href="cardapio.html">Cardápio</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 mx-3">
+            <div class="footer-tittle">Redes sociais</div>
+            <ul class="list-unstyled">
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Facebook</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 mx-3">
+            <div class="footer-tittle">Outros</div>
+            <ul class="list-unstyled">
+              <li><a href="login.html">Login</a></li>
+              <li><a href="carrinho.html">Carrinho</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="javascript/buttonlogin.js"></script>
+    <script src="javascript/logout.js"></script>
+
+    <script src="js/jquerry.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

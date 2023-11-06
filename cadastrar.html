@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Enter your description here" />
+    <title>Cadastro</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="css/bootstrap.min.css"
+    />
+    <!-- Font Awesome CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+
+  <body class="bg-cinza">
+    <!-- Navbar -->
+     <nav class="navbar navbar-expand-lg navbar-light bgred bg-danger">
+      <a class="navbar-brand" href="index.html">
+        <img
+          src="images/logo.png"
+          alt="Logo"
+          width="30px"
+          height="29px"
+          class="pd-3"
+        />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="index.html"> HOME </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="cardapio.html"> CARDAPIO </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="sobre.html"> SOBRE </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="pedidos.html"> PEDIDOS </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-white" href="carrinho.html"> CARRINHO </a>
+          </li>
+          <li class="nav-item">
+            <a id="loginLink" class="nav-link text-white" href="login.html"
+              >LOGIN</a
+            >
+            <a
+              id="logoutLink"
+              class="nav-link text-white"
+              href="javascript:logoutUser();"
+              style="display: none"
+              >SAIR</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+    <!-- Conteúdo Principal -->
+   <div class="container bg-grey content-area">
+  <div class="row justify-content-center">
+    <div class="col-md-6 bg-white mb-5"> <!-- Coluna para o formulário -->
+      <h2>Cadastre-se</h2>
+      <form id="loginForm" action="http://localhost:3000/php/create.php" method="POST">
+        <div class="form-group">
+          <label for="loginEmail">Email:</label>
+          <input type="email" id="loginEmail" class="form-control" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="loginUser">Usuário:</label>
+          <input type="text" id="user" class="form-control" required />
+        </div>
+        <div class="form-group">
+          <label for="loginNome">Nome Completo:</label>
+          <input type="text" id="loginSenha" class="form-control" name="nome" required />
+        </div>
+        <div class="form-group">
+          <label for="loginSenha">Senha:</label>
+          <input type="password" id="loginSenha" class="form-control" name="password" required />
+        </div>
+        <div class="form-group">
+          <label for="loginRepSenha">Repita a Senha:</label>
+          <input type="password" id="loginSenha" class="form-control" required />
+        </div>
+        <div>
+          <p class="text-danger" id="aviso" style="font-size: 12px;"></p>
+        </div>
+        <div class=" col-lg-6 bg-white mb-3">
+          <button type="submit" class="btn btn-danger" id="btn-cadastrar">Cadastrar</button>
+      </div>
+      </form>
+    </div>
+    <div class="col-md-6 d-none d-lg-block"> <!-- Coluna para a imagem -->
+      <img src="imagens/image 1.png"/>
+    </div>
+  </div>
+</div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-white py-3">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 d-none d-md-block">
+              <!-- Classe d-md-none para ocultar em telas menores que MD -->
+              <img src="imagens/logo.png" alt="Logo" />
+            </div>
+  
+            <div class="col-md-2 mx-3">
+              <div class="footer-tittle">Informações</div>
+              <ul class="list-unstyled">
+                <li><a href="">Home</a></li>
+                <li><a href="">Sobre</a></li>
+                <li><a href="">Cardápio</a></li>
+              </ul>
+            </div>
+  
+            <div class="col-md-2 mx-3">
+              <div class="footer-tittle">Redes sociais</div>
+              <ul class="list-unstyled">
+                <li><a href="">Home</a></li>
+                <li><a href="">Sobre</a></li>
+              </ul>
+            </div>
+  
+            <div class="col-md-2 mx-3">
+              <div class="footer-tittle">Outros</div>
+              <ul class="list-unstyled">
+                <li><a href="">Login</a></li>
+                <li><a href="">Carrinho</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    <!-- Scripts (Coloque no final do body) -->
+    <script src="js/jquerry.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="javascript/login-invalido.js"></script>
+  </body>
+</html>

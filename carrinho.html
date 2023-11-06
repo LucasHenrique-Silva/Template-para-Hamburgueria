@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="javascript/islogged.js"></script>
+    <title>Carrinho</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bgred bg-danger">
+      <a class="navbar-brand" href="index.html">
+        <img
+          src="images/logo.png"
+          alt="Logo"
+          width="30px"
+          height="29px"
+          class="pd-3"
+        />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="index.html"> HOME </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="cardapio.html"> CARDAPIO </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="sobre.html"> SOBRE </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="pedidos.html"> PEDIDOS </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-white" href="carrinho.html"> CARRINHO </a>
+          </li>
+          <li class="nav-item">
+            <a id="loginLink" class="nav-link text-white" href="login.html"
+              >LOGIN</a
+            >
+            <a
+              id="logoutLink"
+              class="nav-link text-white"
+              href="javascript:logoutUser();"
+              style="display: none"
+              >SAIR</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!--Conteudo-->
+    <div class="container bgwhite content-area">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="title mt-3 pb-5">Veja aqui seus pedidos</h2>
+        </div>
+
+        <div class="container bgwhite content-area">
+          <div class="row">
+            <div class="col-4 text-center mx-auto font-weight-bold pb-3">
+              Hamburguer
+            </div>
+            <div class="col-4 text-center mx-auto font-weight-bold pb-3">
+              Quantidade
+            </div>
+            <div class="col-4 text-center mx-auto font-weight-bold pb-3">
+              Valor
+            </div>
+
+            <div class="col-4 text-center mx-auto font-weight-normal">
+              Hamburguer 1
+            </div>
+            <div class="col-4 text-center mx-auto font-weight-normal">
+              10
+            </div>
+            <div class="col-4 text-center mx-auto font-weight-normal">
+              126,00
+            </div>
+
+            <div class="col-4 text-center mx-auto font-weight-normal">
+              Hamburguer 1
+            </div>
+            <div class="col-4 text-center mx-auto font-weight-normal">1</div>
+            <div class="col-4 text-center mx-auto font-weight-normal">
+              12,50
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 pb-5">
+        <span class="font-weight-bold">Total:R$ 12,50</span>
+        <button type="submit" class="btn float-right btn-danger">
+          Comprar
+        </button>
+      </div>
+    </div>
+
+    <!--Footer-->
+    <footer class="text-white py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 d-none d-lg-block">
+            <!-- Classe d-lg-none para ocultar em telas menores que lg -->
+            <img src="images/logo.png" alt="Logo" />
+          </div>
+
+          <div class="col-lg-2 mx-3">
+            <div class="footer-tittle">Informações</div>
+            <ul class="list-unstyled">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="sobre.html">Sobre</a></li>
+              <li><a href="cardapio.html">Cardápio</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 mx-3">
+            <div class="footer-tittle">Redes sociais</div>
+            <ul class="list-unstyled">
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Facebook</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 mx-3">
+            <div class="footer-tittle">Outros</div>
+            <ul class="list-unstyled">
+              <li><a href="login.html">Login</a></li>
+              <li><a href="carrinho.html">Carrinho</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="javascript/islogged.js"></script>
+    <script src="javascript/buttonlogin.js"></script>
+    <script src="javascript/logout.js"></script>
+
+   <script src="js/jquerry.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

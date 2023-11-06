@@ -1,0 +1,187 @@
+body {
+  background-color: #c8c8c8;
+  font-family: "Inter", "Arial", sans-serif;
+}
+.bg-grey{
+  padding-top: 53px;
+  padding-left: 5%;
+  background: #D9D9D9;
+}
+.bg-cinza{
+  background: #C8C8C8;
+}
+input{
+  width: 246px;
+  height: 21px;
+}
+footer {
+    background-color: #242424;
+    color: #fff;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 120px;
+    position: relative;
+  }
+  
+  .footer-links {
+    text-decoration: none;
+    color: inherit;
+    list-style: none;
+  }
+  
+  .content-area {
+    min-height: calc(84vh - 70px);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .list-unstyled li a {
+    color: #898787;
+    text-decoration: none;
+    font-size: 10px;
+  }
+  
+  .footer-tittle {
+    margin-top: 25px;
+    color: #fff;
+    font-size: 12px;
+  }
+  .form-group{
+    font-family: "Inter", "Arial", sans-serif;
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
+
+    a:hover{
+    text-decoration: none;
+    color: inherit;
+  }
+
+
+
+
+
+body {
+  background-color: #c8c8c8;
+  font-family: "Inter", "Arial", sans-serif;
+}
+
+.bgred {
+  font-family: "Inter", "Arial", sans-serif;
+  font-size: 12px;
+}
+
+.navbar-nav .nav-item .nav-link {
+  transition: font-size 0.3s; /* Adiciona uma transição suave para a mudança de tamanho */
+}
+
+.navbar-nav .nav-item:hover .nav-link {
+  font-size: 14px;
+}
+
+.bgwhite {
+  background-color: white;
+}
+
+.title {
+  font-size: 24px;
+}
+
+.borda {
+  border: 1px solid black;
+}
+
+footer {
+  background-color: #242424;
+  color: #fff;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 120px;
+  position: relative;
+}
+
+.footer-links {
+  text-decoration: none;
+  color: inherit;
+  list-style: none;
+}
+
+.content-area {
+  min-height: calc(80vh - 70px);
+  display: flex;
+  flex-direction: column;
+}
+
+.list-unstyled li a {
+  color: #898787;
+  text-decoration: none;
+  font-size: 10px;
+}
+
+.footer-tittle {
+  margin-top: 25px;
+  color: #fff;
+  font-size: 12px;
+}
+
+/*  Home*/
+
+.title-home {
+  margin-bottom: 10%;
+  margin-left: 20%;
+}
+
+.home-main-image{
+  margin-left: -5%;
+  margin-right: 3%;
+}
+
+/*Sobre*/
+
+.sobre-font-tam{
+  font-size: 12px;
+}
+
+/* Cardapio */
+.cardapio {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.bg-tam {
+  background-color: #898787;
+  padding: 8px;
+}
+
+.cardapio-title {
+  font-size: 20px; /* Tamanho da fonte */
+  color: yellow; /* Cor do texto (amarelo) */
+  font-weight: bold; /* Estilo de negrito, se desejado */
+  /* Outros estilos, como margem, preenchimento, etc., conforme necessário */
+}
+
+.cardapio-descricao {
+  font-size: 12px; /* Tamanho da fonte da descrição */
+  color: rgb(15, 0, 0); /* Cor do texto (vermelho) */
+  /* Outros estilos, como margem, preenchimento, etc., conforme necessário */
+}
+
+.preco {
+  list-style: none;
+  width: auto;
+}
+
+
+/*Pedidos*/
+.caixa-item{
+  list-style: none;
+}
